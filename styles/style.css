@@ -24,7 +24,6 @@
 .header__theme-menu {
   grid-row: 1;
   justify-self: end;
-  /*align-self: center;*/
   position: relative;
   top: 70px;
 }
