@@ -1,8 +1,8 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  background-color: var(--bc-color);
-  background-image: url("../images/cover-image-dark.png");
+  background-color: var(--bg-color);
+  background-image: var(--bg-image);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -131,22 +131,33 @@
   pointer-events: none;
 }
 
+
 .content__section {
-  padding: 40px 10px;
+  padding: 10px;
   display: grid;
-  gap: 20px;
+  gap: 22px;
+  margin-block: 30px 0;
+}
+
+.content__section:first-child {
+  margin-top: 30px;
 }
 
 .content__title {
-  color: var(--accent-color);
-  font-size: 18px;
-  font-weight: 700px;
+  color: var(--section-heading-color);
+  font-weight: 700;
   line-height: 23.4px;
+  font-size: 18px;
 }
 
 .card {
   display: grid;
   gap: 10px;
+  font-size: 18px;
+}
+
+.card__title{
+  font-size: 18px;
 }
 
 .card__link {
@@ -268,7 +279,7 @@
   }
 
   .header__title {
-    margin-inline-end: 273px 132px;
+    margin-block: 0 114px;
   }
 
   .header__text {
@@ -276,7 +287,7 @@
     max-height: 71px;
   }
 
-  .content__section:nth-child(2){
+  .content__section:nth-child(2) {
     grid-template-columns: repeat(3, 1fr);
     align-items: start;
   }
@@ -286,12 +297,12 @@
   }
 
   .content__section:nth-child(1) .card,
-.content__section:nth-child(3) .card {
-  max-width: 649px;
-  justify-self: end;
-}
+  .content__section:nth-child(3) .card {
+    max-width: 649px;
+    justify-self: end;
+  }
 
-.content__title{
-  min-width: 315px;
-}
+  .content__title {
+    min-width: 315px;
+  }
 }

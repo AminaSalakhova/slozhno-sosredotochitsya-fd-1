@@ -1,9 +1,11 @@
 :root {
-  --bd-color: #000028;
+  --bg-color: #000028;
   --text-color: #f1b2ce;
   --accent-color: #ff0070;
   --title-color: #db00ff;
   --title-decor-color: #ff0070;
   --title-decor-text: #000028;
+  --section-heading-color:#ff0070;
   --main-font: "IBM Plex Mono", monospace;
+  --bg-image: url("../images/cover-image-dark.png");
 }
